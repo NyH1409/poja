@@ -10,17 +10,14 @@ plugins {
 
     id 'jacoco'
 
-    <?java-plugins>
+    <?sonar-java-plugins>
 }
 
 jacoco {
     toolVersion = "0.8.11"
 }
 
-sonarqube {
-    properties {
-    }
-}
+<?sonar-conf>
 
 repositories {
 <?java-repositories>
